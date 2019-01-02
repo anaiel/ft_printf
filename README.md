@@ -4,7 +4,11 @@ This project was completed in december 2018 as part of the 42 school cursus. The
 
 ## Getting Started
 
-Run the `make` command to compile the library.
+In the project folder, update the libft library with the following command :
+```
+git submodule update --remote --merge
+```
+Then run the `make` command to compile the library.
 
 ## Authors
 

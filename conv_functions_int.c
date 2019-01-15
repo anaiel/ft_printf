@@ -6,14 +6,13 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 09:57:10 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/21 18:04:32 by dtrigalo         ###   ########.fr       */
+/*   Updated: 2019/01/15 16:44:06 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/libft.h"
 #include <stdarg.h>
 #include <stdint.h>
-#include <stdio.h>
 
 char	*conv_d(va_list ap, char *mod)
 {

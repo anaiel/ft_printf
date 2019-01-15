@@ -6,14 +6,13 @@
 /*   By: dtrigalo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/29 16:28:38 by dtrigalo          #+#    #+#             */
-/*   Updated: 2018/12/23 16:14:12 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/15 16:44:25 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft/libft.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 static t_flag	*initialise_flag(void)
 {

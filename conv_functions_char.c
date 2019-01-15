@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 09:56:09 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/23 15:50:08 by dtrigalo         ###   ########.fr       */
+/*   Updated: 2019/01/15 16:43:55 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <wchar.h>
-#include <stdio.h>
 
 static unsigned char	*conv_c_wchar(va_list ap)
 {

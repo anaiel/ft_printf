@@ -4,6 +4,8 @@ This project was completed in december 2018 as part of the 42 school cursus. The
 
 ![Ft_printf](https://i.imgur.com/MmqrRG4.png "Algo branch > ft_printf")
 
+*Parsing, variadic functions*
+
 ## Solving the problem
 
 This problem requires to do more advanced **parsing**, and also to use **variadic functions** since printf takes an undefined number of arguments.
@@ -41,6 +43,7 @@ The precision is also a number, preceded with a point. For diouxX conversions, i
 | 0 | Pads with zeros instead of the default spaces |
 
 | Modifiers | Effect |
+|:---------:|:------:|
 | hh | di are interpreted as signed char, ouxX as unsigned char |
 | h | di are interpreted as short int, ouxX as unsigned short int |
 | l | di are interpreted as long int, ouxX as unsigned long int, c as wint_t and s as wchar_t* |

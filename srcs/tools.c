@@ -6,13 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 14:54:00 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/12 18:44:28 by dtrigalo         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:28:19 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "ft_printf.h"
-#include <stdlib.h>
 
 int				move_right(char *str, int nbchar, char c)
 {

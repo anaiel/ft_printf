@@ -6,20 +6,17 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/12 10:46:45 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/23 17:24:55 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:26:07 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "ft_printf.h"
-#include <stdlib.h>
-#include <unistd.h>
 
-static char	*deci_part(long double dbl, int accu)
+static char	*deci_part(double dbl, int accu)
 {
-	char		*res;
-	int			i;
-	long double	tmp;
+	char	*res;
+	int		i;
+	double	tmp;
 
 	if (!(res = ft_strnew(accu + 1)))
 		exit_error("error: malloc failed\n", 0);
@@ -31,7 +28,7 @@ static char	*deci_part(long double dbl, int accu)
 	{
 		tmp = dbl / ft_double_power(10.0, accu);
 		res[i] = '0' + (int)tmp;
-		dbl -= (long double)((int)tmp * ft_double_power(10.0, accu));
+		dbl -= (double)((int)tmp * ft_double_power(10.0, accu));
 		i++;
 	}
 	return (res);
@@ -52,12 +49,12 @@ static char	*concat(char *s1, char *s2)
 	return (res);
 }
 
-static char	*integ_part(long double *dbl)
+static char	*integ_part(double *dbl)
 {
-	int			pow_max;
-	int			i;
-	long double	tmp;
-	char		*res;
+	int		pow_max;
+	int		i;
+	double	tmp;
+	char	*res;
 
 	*dbl = (*dbl < 0 ? -*dbl : *dbl);
 	tmp = *dbl;
@@ -72,9 +69,9 @@ static char	*integ_part(long double *dbl)
 	i = 0;
 	while (pow_max >= 0)
 	{
-		tmp = *dbl / ft_ldouble_power(10, pow_max);
+		tmp = *dbl / ft_double_power(10, pow_max);
 		res[i] = '0' + (int)tmp;
-		*dbl -= (long double)((int)tmp * ft_ldouble_power(10, pow_max));
+		*dbl -= (double)((int)tmp * ft_double_power(10, pow_max));
 		pow_max--;
 		i++;
 	}
@@ -94,23 +91,22 @@ static int	get_accuracy(char *specs)
 	return (res);
 }
 
-char		*conv_longf(va_list ap, char *specs)
+char		*conv_f(va_list ap, char *specs)
 {
-	int			accu;
-	char		*res;
-	long double	dbl;
-	char		*tmp;
-	int			isneg;
+	int		accu;
+	char	*res;
+	double	dbl;
+	char	*tmp;
+	int		isneg;
 
+	if (ft_strchr(specs, 'L'))
+		return (conv_longf(ap, specs));
 	accu = get_accuracy(specs);
-	dbl = (long double)va_arg(ap, long double);
+	dbl = va_arg(ap, double);
 	isneg = (dbl < 0 ? 1 : 0);
 	res = integ_part(&dbl);
 	if (accu)
-	{
-		res = concat(res, ft_strdup("."));
-		res = concat(res, deci_part(dbl, accu));
-	}
+		res = concat(concat(res, ft_strdup(".")), deci_part(dbl, accu));
 	if (isneg)
 	{
 		if (!(tmp = ft_strnew(ft_strlen(res) + 2)))

@@ -6,13 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/29 17:41:20 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/15 16:43:45 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:23:38 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "ft_printf.h"
-#include <stdlib.h>
 
 static char	*accuracy_p(char *str, size_t len)
 {

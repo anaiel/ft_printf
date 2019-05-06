@@ -6,12 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 09:57:24 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/06 12:20:09 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:26:57 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
-#include <stdarg.h>
+#include "ft_printf.h"
 
 char	*conv_percentage(va_list ap, char *mod)
 {

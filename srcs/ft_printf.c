@@ -6,14 +6,11 @@
 /*   By: dtrigalo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 19:47:15 by dtrigalo          #+#    #+#             */
-/*   Updated: 2019/01/15 16:44:16 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:27:53 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "ft_printf.h"
-#include <stdlib.h>
-#include <unistd.h>
 
 static char		*converter(char *specs, va_list ap)
 {

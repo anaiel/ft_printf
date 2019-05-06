@@ -6,15 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 09:56:09 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/15 16:43:55 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:25:47 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "ft_printf.h"
-#include <stdarg.h>
-#include <stdlib.h>
-#include <wchar.h>
 
 static unsigned char	*conv_c_wchar(va_list ap)
 {

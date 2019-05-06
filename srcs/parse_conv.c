@@ -6,14 +6,11 @@
 /*   By: dtrigalo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/12 18:47:36 by dtrigalo          #+#    #+#             */
-/*   Updated: 2018/12/23 20:01:10 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:28:06 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft/libft.h"
-#include <stdlib.h>
-#include <stdarg.h>
 
 static t_conv	*initialize_conv_functions(void)
 {

@@ -6,7 +6,7 @@
 /*   By: dtrigalo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/29 16:15:45 by dtrigalo          #+#    #+#             */
-/*   Updated: 2018/12/23 18:58:49 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:28:24 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 
 # include <stdarg.h>
 # include <string.h>
+# include <stdlib.h>
+# include <wchar.h>
+# include <unistd.h>
+# include <stdint.h>
+# include "libft.h"
 
 typedef va_list	t_va;
 

@@ -6,14 +6,11 @@
 /*   By: dtrigalo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/12 11:53:33 by dtrigalo          #+#    #+#             */
-/*   Updated: 2018/12/12 11:53:35 by dtrigalo         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:24:13 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "ft_printf.h"
-#include <stdlib.h>
-#include <stdarg.h>
 
 static char	*bytes_to_string(long int x)
 {

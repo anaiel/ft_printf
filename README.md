@@ -18,17 +18,17 @@ int   ft_printf(format, ...);
 
 ft_printf receives a string, called the *format*, which may contain a number of placeholders introduced by the character % and concluded by the type of conversion (string to string, int to decimal, int to hexa, etc.). Between the '%' and the conversion may be a number of options: flags, modifiers (which modify the length of the expected data), field and precision. ft_printf replaces the placeholder with the content of the correspinding argument after all the options are applied. Here is a summary of the different options :
 
-| Conversion | Effect |
-|:----------:|:------:|
-| d / i | Prints an int in decimal form |
-| o | Prints an int in octal form |
-| u | Prints an unsigned int in decimal form |
-| x | Prints an int in hexadecimal form (lowercase) |
-| X | Prints an int in hexadecimal form (uppercase) |
-| c | Prints a char |
-| s | Prints a string (char \*) |
-| p | Prints a pointer's address |
-| f | Prints a floar (default precision is 6) |
+| Conversion | Type of argument | Effect |
+|:----------:|:----------------:|:------:|
+| d / i | int | Prints an int in decimal form |
+| o | unsigned int | Prints an int in octal form |
+| u | unsigned int | Prints an unsigned int in decimal form |
+| x | unsigned int | Prints an int in hexadecimal form (lowercase) |
+| X | unsigned int | Prints an int in hexadecimal form (uppercase) |
+| c | char | Prints a char |
+| s | char * | Prints a string |
+| p | void * | Prints a pointer's address |
+| f | double | Prints a float (default precision is 6) |
 
 Field width is the minimum length of the string resulting from the conversion, and is given with a number. By default, if the resulting string is shorted that the field width, the resulting string is aligned on the right and spaces are used to fill the extra characters on the left.
 
@@ -44,11 +44,11 @@ The precision is also a number, preceded with a point. For diouxX conversions, i
 
 | Modifiers | Effect |
 |:---------:|:------:|
-| hh | di are interpreted as signed char, ouxX as unsigned char |
-| h | di are interpreted as short int, ouxX as unsigned short int |
-| l | di are interpreted as long int, ouxX as unsigned long int, c as wint_t and s as wchar_t* |
-| ll | di are interpreted as long long int, ouxX as unsigned long long int |
-| j | di are interpreted as intmax_t, uoxX as uintmax_t |
+| hh | di accept a signed char, ouxX an unsigned char |
+| h | di accept a short int, ouxX an unsigned short int |
+| l | di accept a long int, ouxX an unsigned long int, c a wint_t and s a wchar_t* |
+| ll | di accept a long long int, ouxX an unsigned long long int |
+| j | di accept an intmax_t, uoxX an uintmax_t |
 
 ## Getting Started
 

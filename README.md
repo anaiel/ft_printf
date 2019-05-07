@@ -2,6 +2,8 @@
 
 This project was completed in december 2018 as part of the 42 school cursus. The aim was to compile a library containing the functions from our [libft](https://github.com/anaiel/libft) and our own version of the printf function. The full instuctions can be found in the *resources* folder.
 
+🍌 This project was completed with [Xeska](http://github.com/Xeska)
+
 ![Ft_printf](https://i.imgur.com/MmqrRG4.png "Algo branch > ft_printf")
 
 *Parsing, variadic functions*
@@ -66,5 +68,6 @@ As well as the following flags to the compilation of the sources of the project 
 
 ## Authors
 
+🍌 Team Unbananable:
 * **[anaiel](https://github.com/anaiel)** - *Flags, wide characters, floats*
-* [Xeska](https://github.com/Xeska) - *Conversions, modifiers, binary*
+* **[Xeska](https://github.com/Xeska)** - *Conversions, modifiers, binary*

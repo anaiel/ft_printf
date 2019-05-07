@@ -71,3 +71,5 @@ As well as the following flags to the compilation of the sources of the project 
 🍌 Team Unbananable:
 * **[anaiel](https://github.com/anaiel)** - *Flags, wide characters, floats*
 * **[Xeska](https://github.com/Xeska)** - *Conversions, modifiers, binary*
+
+<img align="right" src="https://i.imgur.com/wq6mGeJ.png" />

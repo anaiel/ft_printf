@@ -6,7 +6,7 @@
 #    By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 17:19:55 by anleclab          #+#    #+#              #
-#    Updated: 2019/04/23 13:24:47 by anleclab         ###   ########.fr        #
+#    Updated: 2019/05/07 11:38:38 by anleclab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -94,7 +94,9 @@ SRC_NAMES = ft_memset.c \
 	  ft_fclose.c \
 	  ft_fgetc.c \
 	  ft_nbdigits.c \
-	  ft_nbdigits_base.c
+	  ft_nbdigits_base.c \
+	  ft_litoa.c \
+	  ft_llitoa.c
 SRCS = $(addprefix $(SRC_DIR), $(SRC_NAMES))
 OBJ_DIR = objs/
 OBJ_NAMES = $(SRC_NAMES:.c=.o)

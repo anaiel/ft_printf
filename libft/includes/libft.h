@@ -6,7 +6,7 @@
 /*   By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 17:19:32 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 12:38:38 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/05/07 11:37:57 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,5 +122,7 @@ int					ft_fclose(t_file **stream);
 int					ft_fgetc(t_file *stream);
 int					ft_nbdigits(int nb);
 int					ft_nbdigits_base(unsigned int nb, int base);
+char				*ft_litoa(long int n);
+char				*ft_llitoa(long long int n);
 
 #endif
